@@ -73,6 +73,7 @@ function HomePage() {
         </div>
 
     </main>
+    
   );
 }
 

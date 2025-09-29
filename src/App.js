@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 
 import {
   BrowserRouter as Router,
@@ -12,7 +12,11 @@ import AboutPage from './AboutPage/AboutPage';
 import LoginPage from './LoginPage/LoginPage';
 import Menu from './Menu/Menu';
 import Hero from './Hero/Hero';
+import BudgetChart  from './Chart/Chart';
+import D3pieChart from './D3Chart/D3Chart';
+import Axios from './Axios/Axios';
 import Footer from './Footer/Footer';
+
 
 function App() {
   return (
@@ -27,8 +31,17 @@ function App() {
           <Route path="/login">
             <LoginPage />
           </Route>
+          <Route path="/chart">
+            <BudgetChart  />
+          </Route>
           <Route path="/">
             <HomePage />
+          </Route>
+          <Route path="/d3chart">
+            <D3pieChart />
+          </Route>
+          <Route path="/axios">
+            <Axios />
           </Route>
         </Switch>
       </div>
